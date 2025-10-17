@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  background: #f9f9f9;
+  color: #222;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#crypto-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#crypto-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+}
+
+#crypto-list li:last-child {
+  border-bottom: none;
+}
+
+.crypto-name-symbol {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.crypto-symbol {
+  color: #777;
+  text-transform: uppercase;
+}
+
+.crypto-price {
+  font-family: monospace;
+  color: #009900;
+}
+
+@media (max-width: 480px) {
+  #crypto-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .crypto-price {
+    margin-top: 0.3rem;
+  }
+}
